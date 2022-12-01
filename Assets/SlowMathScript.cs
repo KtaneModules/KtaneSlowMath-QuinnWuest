@@ -210,6 +210,7 @@ public class SlowMathScript : MonoBehaviour
     private void GenerateSolution()
     {
         _stageCount = Rnd.Range(3, 6);
+        Debug.LogFormat("[Slow Math #{0}] ===============================================", _moduleId);
         Debug.LogFormat("[Slow Math #{0}] There will be {1} stages.", _moduleId, _stageCount);
         tryAgain:
         _solutionNums = new List<int>();
