@@ -143,7 +143,7 @@ public class SlowMathScript : MonoBehaviour
                 if (_timeRemaining > _maxTime)
                 {
 
-                    Debug.LogFormat("[Slow Math #{0}] The time remaining has gone above 45 seconds. Strike.", _moduleId);
+                    Debug.LogFormat("[Slow Math #{0}] The time remaining has gone above {1} seconds. Strike.", _moduleId, _maxTime);
                     Module.HandleStrike();
                     ResetUponStrike();
                 }
