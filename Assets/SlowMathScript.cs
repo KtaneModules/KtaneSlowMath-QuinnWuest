@@ -410,7 +410,12 @@ public class SlowMathScript : MonoBehaviour
         }
     }
 
-    private IEnumerator TwitchHandleForcedSolve()
+    private void TwitchHandleForcedSolve()
+    {
+        StartCoroutine(Autosolve());
+    }
+
+    private IEnumerator Autosolve()
     {
         if (!_isActivated)
         {
